@@ -49,7 +49,7 @@ class chat_server():
 
     #recieve and send the messages
     def broadcast(self,client,client_pos):
-        client.send(bytes("[PYTHON SERVER FLAG]","utf-8"))
+        client.send(bytes("[PC SERVER FLAG]","utf-8"))
         print("[+]Flag sent")
         while True:
             if self.hosts_number.value >= 1:
